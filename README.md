@@ -38,18 +38,6 @@ Tailwind CSS Configuration:
 Content: The content array in tailwind.config.js specifies the files Tailwind should scan for class names.
 Theme: Custom colors and fonts are defined in the theme.extend section.
 Plugins: No additional plugins are currently used.
-JavaScript Functionality:
-Active Navigation: The app.js file contains a script that highlights the active menu item when clicked.
-const link = document.querySelectorAll('#mainmenu ul li a');
-
-link.forEach(link => {
-    link.addEventListener('click', function (event) {
-        link.forEach(link => {
-            link.parentElement.classList.remove('active');
-        })
-        this.parentElement.classList.add('active');
-    })
-});
 License
 This project is licensed under the ISC License. See the LICENSE file for more information.
 Author
